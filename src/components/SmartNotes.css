@@ -1,0 +1,12 @@
+.smart-notes-container {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+  }
+  

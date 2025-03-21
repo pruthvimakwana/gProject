@@ -1,0 +1,23 @@
+/* src/components/Leaderboard.css */
+.leaderboard-container {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .leaderboard-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .leaderboard-container p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .leaderboard-container p:first-child {
+    font-weight: bold;
+  }
+  

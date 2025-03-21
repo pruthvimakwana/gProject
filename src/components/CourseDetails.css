@@ -1,0 +1,136 @@
+/* src/components/CourseDetails.css */
+.course-details-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.course-header h1 {
+  font-size: 2.8rem;
+  color: #e9c80f;
+  text-shadow: 0 0 15px rgba(233, 200, 15, 0.7);
+}
+
+.course-header p {
+  font-size: 1.4rem;
+  color: #f5f5f5;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+/* 3D Section */
+.three-d-section {
+  height: 400px;
+  margin: 30px 0;
+}
+
+#three-d-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Course Content */
+.course-content {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.course-content h2 {
+  font-size: 2rem;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.content-preview {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Actions */
+.course-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.view-button,
+.quiz-button,
+.feedback-button,
+.enroll-button,
+.payment-button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+}
+
+.quiz-button {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+}
+
+.feedback-button {
+  background: linear-gradient(to right, #dc3545, #c82333);
+  color: white;
+}
+
+.enroll-button {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.payment-button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+}
+
+.view-button:hover,
+.quiz-button:hover,
+.feedback-button:hover,
+.enroll-button:hover,
+.payment-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-header h1 {
+    font-size: 2rem;
+  }
+  .course-header p {
+    font-size: 1.2rem;
+  }
+  .price {
+    font-size: 1.5rem;
+  }
+  .three-d-section {
+    height: 300px;
+  }
+  .course-content h2 {
+    font-size: 1.5rem;
+  }
+  .course-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

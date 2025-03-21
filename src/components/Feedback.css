@@ -1,0 +1,156 @@
+/* src/components/Feedback.css */
+.feedback-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.feedback-header h1 {
+  font-size: 2.5rem;
+  color: #e9c80f;
+}
+
+.back-button {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
+/* Feedback Box */
+.feedback-box {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.feedback-box h2 {
+  font-size: 1.8rem;
+  color: #28a745;
+}
+
+/* Star Rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: gray;
+}
+
+.star {
+  transition: 0.3s;
+}
+
+.star.filled {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(233, 200, 15, 0.7);
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+/* Feedback Success */
+.feedback-success {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.feedback-success h2 {
+  font-size: 2rem;
+  color: #e9c80f;
+}
+
+.feedback-success p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.back-courses-button {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-courses-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feedback-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .feedback-box {
+    width: 90%;
+  }
+}

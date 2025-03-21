@@ -1,0 +1,98 @@
+/* src/components/Settings.css */
+.settings-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.settings-header h1 {
+  font-size: 2.5rem;
+  color: #e9c80f;
+  text-shadow: 0 0 15px rgba(233, 200, 15, 0.7);
+}
+
+.settings-header p {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+/* Settings Options */
+.settings-options {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Inputs */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+select {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(233, 200, 15, 0.7);
+}
+
+/* Buttons */
+.save-button,
+.logout-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.save-button {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+}
+
+.logout-button {
+  background: linear-gradient(to right, #dc3545, #c82333);
+  color: white;
+}
+
+.save-button:hover,
+.logout-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .settings-header h1 {
+    font-size: 2rem;
+  }
+  .settings-options {
+    width: 90%;
+  }
+}

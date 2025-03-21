@@ -1,0 +1,61 @@
+/* src/components/ContentViewer.css */
+.content-viewer {
+  min-height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+.viewer-header h1 {
+  font-size: 2.5rem;
+  color: #e9c80f;
+}
+
+.back-button {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
+/* Content Display */
+.content-display {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+video,
+iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .viewer-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .viewer-header h1 {
+    font-size: 2rem;
+  }
+}

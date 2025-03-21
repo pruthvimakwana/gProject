@@ -1,0 +1,13 @@
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 60px;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}

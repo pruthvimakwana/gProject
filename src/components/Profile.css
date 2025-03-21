@@ -1,0 +1,116 @@
+/* src/components/Profile.css */
+.profile-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-header h1 {
+  font-size: 2.5rem;
+  color: #e9c80f;
+  text-shadow: 0 0 15px rgba(233, 200, 15, 0.7);
+}
+
+.profile-card {
+  max-width: 500px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* Profile Picture */
+.profile-pic {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #e9c80f;
+}
+
+.profile-pic input {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Profile Info */
+.profile-info {
+  text-align: left;
+}
+
+.profile-item {
+  margin-bottom: 15px;
+}
+
+.profile-item label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #007bff;
+}
+
+
+.profile-item input,
+.profile-item textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+}
+
+.profile-item input:focus,
+.profile-item textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(233, 200, 15, 0.7);
+}
+
+/* Save Button */
+.save-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+}
+
+.save-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+  .profile-card {
+    width: 90%;
+  }
+}

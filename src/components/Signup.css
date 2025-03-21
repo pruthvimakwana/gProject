@@ -1,0 +1,177 @@
+/* src/components/Signup.css */
+.signup-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('/src/assets/signup-background.jpg'); /* AI-generated background */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); /* Neon glow */
+  backdrop-filter: blur(5px); /* Glass effect */
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-container h2 {
+  text-align: center;
+  color: #007bff; /* Neon blue */
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #28a745; /* Green accent */
+}
+
+/* Input Fields */
+.form-group input,
+.role-select {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.role-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Password Toggle */
+.password-group {
+  position: relative;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Role Select */
+.role-select {
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+  background-size: 20px;
+}
+
+/* Terms Checkbox */
+.terms {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.terms input {
+  margin-right: 10px;
+}
+
+.terms label {
+  color: #ffffff;
+}
+
+.terms a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  color: #ffffff;
+}
+
+/* Buttons */
+.signup-button,
+.google-signup {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-button {
+  background-color: #007bff; /* Neon blue */
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.google-signup {
+  background-color: #db4437; /* Google red */
+  color: #ffffff;
+}
+
+.signup-button:hover,
+.google-signup:hover {
+  transform: scale(1.05);
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-link a {
+  color: #28a745;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #ffffff;
+}
+
+/* Error Message */
+.error-message {
+  background-color: rgba(248, 215, 218, 0.8);
+  color: #721c24;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signup-container {
+    max-width: 90%;
+  }
+  .signup-container h2 {
+    font-size: 2rem;
+  }
+}
